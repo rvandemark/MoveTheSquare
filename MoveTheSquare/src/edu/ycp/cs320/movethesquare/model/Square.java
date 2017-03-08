@@ -1,10 +1,13 @@
 package edu.ycp.cs320.movethesquare.model;
 
+import java.awt.Color;
+
 public class Square {
 	private double x, y, width, height;
+	private Color color;
 	
 	public Square() {
-		
+		color = Color.yellow;
 	}
 	
 	public void setX(double x) {
@@ -15,12 +18,20 @@ public class Square {
 		return x;
 	}
 	
+	public Color getColor() {
+		return color;
+	}
+	
 	public void setY(double y) {
 		this.y = y;
 	}
 	
 	public double getY() {
 		return y;
+	}
+	
+	public void setColor(Color c) {
+		color = c;
 	}
 	
 	public void setWidth(double width) {
